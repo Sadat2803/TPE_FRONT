@@ -1,0 +1,146 @@
+body {
+	margin: 0;
+}
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+input[type='radio'] {
+	transform: scale(1.5);
+	filter: grayscale(1);
+}
+
+input[type='checkbox'] {
+	transform: scale(1.5);
+	filter: grayscale(1);
+}
+
+input[type='date'][disabled] {
+	background-color: white;
+}
+
+input[type='text'][disabled] {
+	background-color: white;
+}
+
+input[type='time'][disabled] {
+	background-color: white;
+}
+
+input[type='number'][disabled] {
+	background-color: white;
+}
+
+textarea[disabled] {
+	background-color: white;
+}
+
+.flatpickr-calendar {
+	font-family: Montserrat;
+}
+
+.date-input {
+	display: flex;
+	flex: 1;
+	border-radius: 0.5rem;
+	border: none;
+	padding: 1rem;
+	font-family: Montserrat;
+	color: #858ea8;
+}
+
+.animate-spin {
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.loader,
+.loader:after {
+	border-radius: 50%;
+	width: 5em;
+	height: 5em;
+}
+.loader {
+	/* margin: 60px auto; */
+	font-size: 5px;
+	position: relative;
+	text-indent: -9999em;
+	border-top: 0.6em solid rgba(255, 255, 255, 0.2);
+	border-right: 0.6em solid rgba(255, 255, 255, 0.2);
+	border-bottom: 0.6em solid rgba(255, 255, 255, 0.2);
+	border-left: 0.6em solid #ffffff;
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-animation: load8 0.7s infinite linear;
+	animation: load8 0.7s infinite linear;
+}
+@-webkit-keyframes load8 {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@keyframes load8 {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+.preview-signalement-image {
+	width: 100px;
+	height: 100px;
+	border-radius: 5px;
+	object-fit: cover;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+}
+
+.radio-btn-group-palettes {
+	display: flex;
+}
+
+.radio-btn-group-palettes .radio label {
+	background: #fff;
+	border: 1px solid #ddd;
+	padding: 0.5rem 1.25rem;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #444;
+}
+
+.radio-btn-group-palettes .radio input[type='radio'] {
+	display: none;
+}
+
+.radio-btn-group-palettes .radio input[type='radio']:checked + label {
+	background: #fcc200;
+	color: #fff;
+	border-color: #fcc200;
+}
