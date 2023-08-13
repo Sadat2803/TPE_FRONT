@@ -52,7 +52,7 @@
 	},
 	"scripts": {
 		"start": "react-scripts --openssl-legacy-provider start",
-		"build": "react-scripts --openssl-legacy-provider build ",
+		"build": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
 	},
