@@ -36,4 +36,4 @@ jobs:
       env:
        CI: false
     - run : mv /var/www/html/TPE_FRONT/_work/TPE_FRONT/TPE_FRONT/build /var/www/html/TPE_API/_WORK/TPE_API/TPE_API/
-    - run : mv /var/www/html/TPE_FRONT/_work/TPE_FRONT/TPE_FRONT/static /var/www/html/TPE_API/_WORK/TPE_API/TPE_API
+    - run : mv /var/www/html/TPE_FRONT/_work/TPE_FRONT/TPE_FRONT/build/static /var/www/html/TPE_API/_WORK/TPE_API/TPE_API/
