@@ -2,6 +2,24 @@
 	"name": "my-app",
 	"version": "0.1.0",
 	"private": true,
+	"eslintConfig": {
+		"extends": [
+			"react-app"
+		],
+		"rules": {
+			"no-unused-vars": "warn"
+		},
+		"overrides": [
+			{
+				"files": [
+					"**/*.ts?(x)"
+				],
+				"rules": {
+					"max-len": "warn"
+				}
+			}
+		]
+	},
 	"dependencies": {
 		"@babel/helper-regex": "^7.10.5",
 		"@googlemaps/react-wrapper": "^1.1.20",
@@ -51,13 +69,11 @@
 		"xlsx": "^0.17.4"
 	},
 	"scripts": {
+		"deploy": "gh-pages -d build",
 		"start": "react-scripts --openssl-legacy-provider start",
-		"build": "react-scripts build",
+		"build": "react-scripts --openssl-legacy-provider build ",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
-	},
-	"eslintConfig": {
-		"extends": "react-app"
 	},
 	"browserslist": {
 		"production": [

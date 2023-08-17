@@ -88,7 +88,7 @@ export default function HomePage() {
 					display: 'flex',
 					flexDirection: 'column',
 					background:
-						'url("http://141.94.27.46:3000/media/bg@2x.png")',
+						'url("https://b2bglob.com/media/bg@2x.png")',
 					backgroundSize: 'auto',
 					backgroundRepeat: 'no-repeat',
 					fontFamily: 'Montserrat',
