@@ -39,4 +39,5 @@ jobs:
     - run : rm -rf /var/www/html/TPE_API/_work/TPE_API/TPE_API/static
     - run : mv /var/www/html/TPE_FRONT/_work/TPE_FRONT/TPE_FRONT/build/static /var/www/html/TPE_API/_work/TPE_API/TPE_API/
     - run : mv /var/www/html/TPE_FRONT/_work/TPE_FRONT/TPE_FRONT/build /var/www/html/TPE_API/_work/TPE_API/TPE_API/
+    - run : pm2 restart 0
     
